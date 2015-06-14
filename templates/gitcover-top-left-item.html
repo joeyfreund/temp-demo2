@@ -1,0 +1,20 @@
+<div class="gitcover-item-wrapper" >
+
+	<div class="gitcover-profile-info">
+    	<img class="profile-pic img-circle" ng-src="{{u.profilePic || 'http://placehold.it/64?text=+'}}"/>
+		<h3>{{u.name}}</h3>
+		<p>{{u.description}}</p>
+    </div>
+
+    <div class="gitcover-tags-item">
+
+        <button ng-repeat="tag in tags | orderBy: '+text'" 
+          class="gitcover-tag btn {{tagIsOn(tag) ? 'btn-success' : 'btn-default'}}"
+          ng-click="toggleTag(tag)"
+          type="button">
+          {{tag.text}}
+        </button>
+
+    </div>
+
+</div>

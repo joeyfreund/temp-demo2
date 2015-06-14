@@ -1,0 +1,256 @@
+/* BEGIN sticky footer */
+html, body, #content-wrapper { height: 100%; }
+body > #content-wrapper { height: auto; min-height: 100%; }
+
+#footer {
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: -3em;
+}
+
+#content-wrapper { 
+  padding-bottom: 3em;
+}
+/* END sticky footer */
+
+
+body {
+  background-color: #EFF2F3;
+  font-family: 'Open Sans', sans-serif; 
+}
+
+
+/* BEGIN gitcover header/footer */
+
+.gitcover-header, .gitcover-footer {
+  color: #EFF2F3;
+  background-color: #0D1B1E;
+}
+
+.gitcover-header {
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.gitcover-footer {
+  text-align: center;
+  padding: 6px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.gitcover-header .header-img{
+  height: 48px;
+  width: 48px;
+  float: left;
+  margin: 0 12px 0 0;
+}
+
+
+.gitcover-header h1{
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 42px; 
+  margin: 0;
+}
+
+.gitcover-header .gitcover-header-btn {
+  float: right;
+  margin: 0;
+}
+
+.gitcover-header .gitcover-header-btn span{
+  font-size: 30px; 
+  font-weight: 300; 
+  line-height: 42px; 
+  color: #EFF2F3;
+  margin: 0; 
+  cursor: pointer;
+}
+
+
+/* END gitcover header */
+
+
+/* BEGIN Profile item */
+
+.gitcover-profile-info {
+  min-height: 48px;
+}
+
+.gitcover-profile-info .profile-pic{
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-right: 12px;
+}
+
+.gitcover-profile-info h3{
+  line-height: 48px;
+}
+
+/* END Profile item */
+
+
+
+
+/* BEGIN Masonry layout */
+
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+.main-content {
+  padding: 1em;
+  
+  -moz-column-width: 16em;
+  -webkit-column-width: 16em;
+  -moz-column-gap: 1em;
+  -webkit-column-gap: 1em;  
+  
+  width:96%;
+  margin: 0 auto 0 auto;
+}
+
+
+.gitcover-item-wrapper {
+   display: inline-block;
+   margin:  0 0 1em 0;
+   padding:  0;
+   width:  100%; 
+}
+
+
+/* END Masonry layout */
+
+
+
+/* BEGIN GitCover tags item */
+
+
+/* Prevent "button glow" when pressing/pressed. */
+.btn:focus, .btn:active, .btn:active:focus {
+  outline: none;
+}
+
+.gitcover-tags-item{
+  overflow: auto;
+  padding: 24px 0;
+}
+
+.gitcover-tags-item .gitcover-tag{
+  float: left;
+  margin: 3px 6px 3px 0;
+  padding: 3px 6px;
+}
+
+
+/* END GitCover tag item */
+
+
+/* BEGIN GitCover item */
+
+a.gitcover-item-link:hover,  a.gitcover-item-link:visited,
+a.gitcover-item-link:link,  a.gitcover-item-link:active {
+  text-decoration: none;
+}
+
+.gitcover-item {
+  background-color: #fff;
+  color: #111;
+  position:relative;
+}
+
+.gitcover-item.with-link:hover {
+  cursor: pointer;
+  padding: 1px;
+  background-color: #E4EBEC;
+}
+
+
+.gitcover-item-badge {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  max-width: 24px;
+}
+
+
+
+.gitcover-item-thumbnail{
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+img.gitcover-item-thumbnail{
+  width: 100%;
+}
+
+
+div.gitcover-item-thumbnail{
+  min-height: 120px;
+  text-align: center;
+
+  /* Default colours */
+  background-color: #086375; 
+  color: #EFF2F3;
+}
+
+/* Example of custom themes */
+div.gitcover-item-thumbnail.theme-1{
+  background-color: #BED7EC;
+  color: #00120B;
+}
+
+div.gitcover-item-thumbnail.theme-2{
+  background-color: #001934;
+}
+
+
+
+div.gitcover-item-thumbnail p{
+  width: 70%;
+  margin: 0 auto;
+  padding: 42px 0;
+  
+  font-size: 18px; 
+  font-weight: 300; 
+  line-height: 20px;
+}
+
+
+.gitcover-item h2 { 
+  font-size: 18px; 
+  font-weight: 300; 
+  line-height: 28px; 
+  margin: 12px 18px 12px 18px; 
+}
+
+.gitcover-item p {
+  font-size: 14px;
+  margin: 0 18px 0 18px;
+  padding: 12px 0 12px 0; 
+}
+
+
+.gitcover-item div.tags{
+  overflow: auto;
+  padding: 0 18px 6px 18px;
+}
+
+.gitcover-item hr {
+  margin: 0 2px 6px 2px; 
+}
+
+
+.gitcover-item .tag{
+  float: left;
+  font-size: 11px; 
+  margin: 3px 6px 3px 0;
+  padding: 2px 4px;
+
+  font-weight: 100;
+}
+
+
+/* END GitCover item */
