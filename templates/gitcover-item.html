@@ -1,32 +1,53 @@
 <div ng-if="shouldDisplayItem(item)" class="gitcover-item-wrapper" >
 
-    <div class="gitcover-item img-rounded"
+    <div class="gitcover-item"
         ng-class="item.url ? 'with-link' : ''"
         ng-click="itemClicked(item)">
 
 
+        <!-- Items with thumbnails are displayed one way -->
+        <div ng-if="item.thumbnail" class="gitcover-item-header">
+            <h2>{{item.title}}</h2>
+            <img class="gitcover-item-thumbnail" ng-src="{{item.thumbnail}}"/>
+        </div>
+
+        <!-- If there is no thumbnail ... -->    
+        <img ng-if="! item.thumbnail && item.badge" class="gitcover-item-badge center-block" ng-src="{{item.badge}}">
+        <h1 ng-if="! item.thumbnail && item.title" >{{item.title | uppercase}}</h1>
+
+        <hr class="dark"/>
+
+
+
+
+
+<!--
+
         <img ng-if="item.badge" class="gitcover-item-badge" ng-src="{{item.badge}}">
 
 
-        <!-- The thumbnail can be an image -->
+        
         <div ng-if="item.thumbnail">
             <img class="gitcover-item-thumbnail img-rounded" ng-src="{{item.thumbnail}}"/>
             <h2>{{item.title}}</h2>
         </div>
-        <!-- The thumbnail can also be a div with a solid background colour -->
+        
         <div ng-if="! item.thumbnail" class="gitcover-item-thumbnail img-rounded" ng-class="item.css_class">
             <p>{{item.title}}</p>
         </div>
-
+-->
 
         <p>
         {{item.description}}
         </p>
 
 
-        <div ng-if="item.tags && item.tags.length > 0" class="tags">
-            <hr />
-            <div ng-repeat="tag in item.tags" class="tag label label-default">{{tag}}</div>
+        <div ng-if="item.tags && item.tags.length > 0" class="tags center-block">
+            <hr class="light"/>
+            <div ng-repeat="tag in item.tags" class="tag">
+                {{tag}}
+                <span class="tag-sep" ng-show="!$last"> | </span>
+            </div>
         </div>
 
 

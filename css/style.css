@@ -21,7 +21,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 26px;
 }
 
 
@@ -51,13 +51,14 @@ body {
   margin: 0 12px 0 0;
 }
 
-
+/*
 .gitcover-header h1{
   font-size: 30px; 
   font-weight: 300; 
   line-height: 42px; 
   margin: 0;
 }
+*/
 
 .gitcover-header .gitcover-header-btn {
   float: right;
@@ -106,8 +107,8 @@ body {
 .main-content {
   padding: 1em;
   
-  -moz-column-width: 16em;
-  -webkit-column-width: 16em;
+  -moz-column-width: 18em;
+  -webkit-column-width: 18em;
   -moz-column-gap: 1em;
   -webkit-column-gap: 1em;  
   
@@ -159,23 +160,50 @@ a.gitcover-item-link:link,  a.gitcover-item-link:active {
 }
 
 .gitcover-item {
-  background-color: #fff;
-  color: #111;
+  color: #323232;
   position:relative;
+  padding: 4em;
+  text-align: center;
 }
+
 
 .gitcover-item.with-link:hover {
   cursor: pointer;
-  padding: 1px;
   background-color: #E4EBEC;
 }
 
 
+.gitcover-item h1{
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.gitcover-item hr {
+  margin: 6px 0; 
+}
+
+.gitcover-item hr.dark {
+  border-color: #323232;
+  margin: 18px 0; 
+}
+
+.gitcover-item hr.light {
+  border-color: #969696;
+}
+
 .gitcover-item-badge {
+  /*
   position: absolute;
   top: 3px;
   left: 3px;
   max-width: 24px;
+  */
+  width: 36px;
+  height: 36px;
+}
+
+.gitcover-item p{
+  margin: 24px 0;
 }
 
 
@@ -221,38 +249,37 @@ div.gitcover-item-thumbnail p{
   line-height: 20px;
 }
 
-
+/*
 .gitcover-item h2 { 
   font-size: 18px; 
   font-weight: 300; 
   line-height: 28px; 
   margin: 12px 18px 12px 18px; 
 }
+*/
 
+/*
 .gitcover-item p {
   font-size: 14px;
   margin: 0 18px 0 18px;
   padding: 12px 0 12px 0; 
 }
+*/
 
 
 .gitcover-item div.tags{
-  overflow: auto;
-  padding: 0 18px 6px 18px;
+  overflow-y: auto;
+  padding: 0 3em;
+  font-size: 14px; 
+  color: #969696;
 }
-
-.gitcover-item hr {
-  margin: 0 2px 6px 2px; 
-}
-
 
 .gitcover-item .tag{
-  float: left;
-  font-size: 11px; 
-  margin: 3px 6px 3px 0;
-  padding: 2px 4px;
+  display: inline-block; 
+}
 
-  font-weight: 100;
+.gitcover-item .tag-sep{
+  margin: 0 6px;
 }
 
 
