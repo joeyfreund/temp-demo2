@@ -2,9 +2,16 @@
 
 
 	<div class="gitcover-header-btn">
+	<!--
 		<a ng-click="isLoggedIn() ? logout() : login()">	
 		<span class="glyphicon glyphicon-log-in" ng-class="isLoggedIn() ? 'glyphicon-log-out' : 'glyphicon-log-in'" aria-hidden="true"></span>
 		</a>
+		-->
+
+		<a ng-if="! isLoggedIn()" ng-click="login()" class="btn btn-block btn-social btn-github">
+		    <i class="fa fa-github"></i> Sign in with GitHub
+		</a>
+
 	</div>
 
 

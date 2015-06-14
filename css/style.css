@@ -18,7 +18,10 @@ body > #content-wrapper { height: auto; min-height: 100%; }
 
 body {
   background-color: #EFF2F3;
-  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 
@@ -188,7 +191,7 @@ img.gitcover-item-thumbnail{
 
 
 div.gitcover-item-thumbnail{
-  min-height: 120px;
+  min-height: 60px;
   text-align: center;
 
   /* Default colours */
