@@ -24,6 +24,10 @@ body {
   line-height: 26px;
 }
 
+hr {
+  border-color: #323232;
+}
+
 
 /* BEGIN gitcover header/footer */
 
@@ -33,8 +37,15 @@ body {
 }
 
 .gitcover-header {
-  padding: 12px;
-  margin-bottom: 12px;
+  padding: 3px;
+  margin-bottom: 18px;
+}
+
+.gitcover-header h1{
+  margin: 3px 12px;
+  color: #EFF2F3;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .gitcover-footer {
@@ -44,12 +55,14 @@ body {
   line-height: 18px;
 }
 
+/*
 .gitcover-header .header-img{
   height: 48px;
   width: 48px;
   float: left;
   margin: 0 12px 0 0;
 }
+*/
 
 /*
 .gitcover-header h1{
@@ -65,21 +78,23 @@ body {
   margin: 0;
 }
 
+/*
 .gitcover-header .gitcover-header-btn span{
-  font-size: 30px; 
+  font-size: 18px; 
   font-weight: 300; 
-  line-height: 42px; 
+  line-height: 24px; 
   color: #EFF2F3;
   margin: 0; 
   cursor: pointer;
 }
-
+*/
 
 /* END gitcover header */
 
 
 /* BEGIN Profile item */
 
+/*
 .gitcover-profile-info {
   min-height: 48px;
 }
@@ -94,6 +109,27 @@ body {
 .gitcover-profile-info h3{
   line-height: 48px;
 }
+*/
+
+.gitcover-user-info {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.gitcover-user-info .profile-pic{
+  width: 84px;
+  height: 84px;
+}
+
+.gitcover-user-info .tags {
+    max-width: 24em;
+    display: inline-block;
+}
+
+.gitcover-user-info .tags .tag{
+    padding: 2px 9px;
+    margin: 3px;
+}
 
 /* END Profile item */
 
@@ -104,7 +140,7 @@ body {
 
 *, *:before, *:after {box-sizing:  border-box !important;}
 
-.main-content {
+.gitcover-items {
   padding: 1em;
   
   -moz-column-width: 18em;
@@ -178,6 +214,12 @@ a.gitcover-item-link:link,  a.gitcover-item-link:active {
   line-height: 42px;
 }
 
+.gitcover-item h2{
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+
 .gitcover-item hr {
   margin: 6px 0; 
 }
@@ -218,16 +260,17 @@ img.gitcover-item-thumbnail{
 }
 
 
+/*
 div.gitcover-item-thumbnail{
   min-height: 60px;
   text-align: center;
 
-  /* Default colours */
+  
   background-color: #086375; 
   color: #EFF2F3;
 }
 
-/* Example of custom themes */
+
 div.gitcover-item-thumbnail.theme-1{
   background-color: #BED7EC;
   color: #00120B;
@@ -236,9 +279,9 @@ div.gitcover-item-thumbnail.theme-1{
 div.gitcover-item-thumbnail.theme-2{
   background-color: #001934;
 }
+*/
 
-
-
+/*
 div.gitcover-item-thumbnail p{
   width: 70%;
   margin: 0 auto;
@@ -248,7 +291,7 @@ div.gitcover-item-thumbnail p{
   font-weight: 300; 
   line-height: 20px;
 }
-
+*/
 /*
 .gitcover-item h2 { 
   font-size: 18px; 

@@ -142,11 +142,11 @@ gitcover.directive('footer', function(){
 });
 
 
-gitcover.directive('gitcoverTopLeftItem', function(){
+gitcover.directive('userInfo', function(){
 	return {
 		restrict: 'EA',
 		replace: true,
-		templateUrl: 'templates/gitcover-top-left-item.html',
+		templateUrl: 'templates/user-info.html',
 	};
 });
 
